@@ -43,13 +43,12 @@ function takeCell(event)
     // Check if the game is over
     if (isGameOver())
     {
-        alert('Game Over');
 
-        let lbl =document.getElementsById('game-over-lbl');
-        //var namelbl = document.createElement('h1');
-        lbl.innerHTML = '<h1> Game over </h1>';
-        //lbl.appendChild(namelbl);
-        console.log(isGameOver);
+        let lbl=document.getElementById('game-over-lbl');
+    
+        lbl.innerHTML = '<h1> Game over </h1>' ;
+       
+        // lbl.appendChild(namelbl);
         // let the lable with the id 'game-over-lbl' display the words 'Game Over' inside <h1> element
     }
 
